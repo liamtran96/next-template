@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React ,{ useState } from "react";
 import {
   decrement,
   increment,
@@ -12,7 +12,7 @@ import {
 } from "@/lib/features/counter/counterSlice";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 
-export const Counter = () => {
+export const Counter= () => {
   const dispatch = useAppDispatch();
   const count = useAppSelector(selectCount);
   const status = useAppSelector(selectStatus);
